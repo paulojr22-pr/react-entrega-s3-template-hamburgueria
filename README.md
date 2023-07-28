@@ -18,7 +18,10 @@ Com os produtos vindo da API, uma funcionalidade interessante a desenvolver em s
 ### 3. Gerenciamento do carrinho | Modal
 De forma muito semelhante ao gerenciamento de transações na entrega anterior, trabalhe na lógica de adicionar e remover itens do carrinho, bem como imprimir os totais. Fique atento, diferente da entrega anterior, os produtos do carrinho virão da própria lista de produtos fornecida pela API.
 
+Nessa etapa, com o gerenciamento funcionando de forma correta, valerá muito a pena utilizar o useEffect para persistir os dados do carrinho no localStorage.
+
+### 4. Modal
 Para o modal, será exigido um comportamento simples de abertura e fechamento, aplique seu conhecimento de condicionais no JSX.
 
-### 4. Desafio - Refine o comportamento do seu modal
+### 5. Desafio - Refine o comportamento do seu modal
 Não é obrigatório, mas, caso você consiga, com base no que foi mostrado nos conteúdos extras, aplique os comportamentos de: fechar ao clicar fora e fechar ao clicar na "Esc" em seu modal, de preferência trabalhando com a criação de hooks para cada um destes comportamentos. Você consegue!
