@@ -1,0 +1,53 @@
+.productCard {
+  border: 1px solid;
+  width: 100%;
+  margin: 20px;
+  min-width: 300px;
+  min-height: 346px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--gray-100);
+  border-radius: 5px;
+
+  &:hover {
+    border: 2px solid var(--color-primary);
+    transition: all 250ms ease-in-out;
+    transform: scale(1.1);
+  }
+  &:hover button {
+    background-color: var(--color-primary);
+  }
+  @media (min-width: 900px) {
+    width: 300px;
+  }
+}
+
+nav {
+
+  aside {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 150px;
+    background-color: var(--gray-0);
+
+  }
+
+  div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      color: var(--gray-600);
+    }
+    span {
+      color: var(--color-primary);
+    }
+    button {
+      max-width: 106px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.itemList {
+
+    width: 100%;
+    min-width: 82px;
+    border-radius: 0.3125rem;
+    justify-content: space-between;
+    display: flex;
+  
+    h3 {
+
+      margin: 10px 150px 0px 0px;
+      width: 200px;
+
+    }
+
+    span {
+
+      margin: 10px 10px 0px 0px;
+
+    }
+
+  }
+  
+  .cardImg {
+
+    padding: 1.25rem;
+    background: var(--gray-0);
+    display: flex;
+    margin-top: 10px;
+    background: var(--gray-0);
+    border-radius: 10px;
+    
+  
+    img {
+
+      max-height: 53px;
+      object-fit: contain;
+
+    }
+
+  }
+  
+  .nameBtn {
+
+    display: flex;
+
+  }

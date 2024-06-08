@@ -20,3 +20,27 @@
     justify-content: space-between;
 
 }
+
+.cartCountContainer {
+
+    position: relative;
+    width: 25px;
+    height: 25px;
+ 
+}
+  
+  .cartItemCount {
+
+    position: absolute;
+    top: -50px;
+    left: 18px;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 2px 6px; 
+    border-radius: 7px; 
+    width: 20px;
+    height: 24px;
+    vertical-align: top;
+
+}
+  

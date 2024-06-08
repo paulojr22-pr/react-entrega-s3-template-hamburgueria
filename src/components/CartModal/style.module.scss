@@ -1,0 +1,79 @@
+.modalOverlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  inset: 0;
+
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modalBox {
+
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background-color: var(--gray-600);
+  max-width: 370px;
+
+  background: #fff;
+
+  @media (min-width: 900px) {
+
+    max-width: 500px;
+
+  }
+  
+  aside {
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    height: 54px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px;
+
+  }
+
+  div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+
+    ul {
+      overflow-y: auto;
+      p {
+        margin: 10px;
+        color: var(--gray-300);
+      }
+    }
+    button {
+      width: 100%;
+    }
+    nav {
+      border-top: 2px solid var(--gray-100);
+      padding-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      span {
+        color: var(--gray-300);
+      }
+    }
+  }
+}
+
+.closeButton {
+
+  color: #fff;
+  position: absolute;
+  left: 90%;
+  border: none;
+  background-color: transparent;
+
+}

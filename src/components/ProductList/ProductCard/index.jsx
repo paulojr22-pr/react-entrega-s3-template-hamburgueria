@@ -1,13 +1,45 @@
-export const ProductCard = ({ product }) => {
-    return(
-        <li>
-            <img src={product.img} alt={product.name} />
-            <div>
-                <h3>{product.name}</h3>
-                <span>{product.category}</span>
-                <span>{product.price.toLocaleString('pt-BR', { style: "currency", currency: "BRL"})}</span>
-                <button>Adicionar</button>
-            </div>
-        </li>
-    )
-}
+import styles from "../ProductCard/style.module.scss";
+
+export const ProductCard = ({ product, addFavorite }) => {
+  
+  return (
+
+    <li className={styles.productCard}>
+
+      <nav>
+
+        <aside>
+
+          <img src={product.img} alt={product.name} />
+
+        </aside>
+        
+        <div>
+
+          <h3 className="title three">{product.name}</h3>
+        
+          <p className="Headline capition">{product.category}</p>
+        
+          <span className="body">
+            
+            {product.price.toLocaleString("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            })}
+
+          </span>
+        
+          <button className="btnSm " onClick={() => addFavorite(product)}>
+            Adicionar
+        
+          </button>
+          
+        </div>
+
+      </nav>
+
+    </li>
+
+  );
+
+};

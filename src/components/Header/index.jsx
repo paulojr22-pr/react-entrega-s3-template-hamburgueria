@@ -1,28 +1,43 @@
-import { useState } from "react";
 import Logo from "../../assets/Logo.svg";
 import { MdShoppingCart } from "react-icons/md";
 import styles from "./styles.module.scss";
 
-export const Header = () => {
-   const [value, setValue] = useState("");
+export const Header = ({ setOpenBtn, setProductList, setValue, cartList }) => {
+
+   const submit = (event) => {
+
+      event.preventDefault();
+      setProductList(value);
+      setValue("");
+      
+    };
 
    return (
 
-      <header className={styles.header}>
+    <header>
 
-         <div className={styles.headerDiv}>
+      <div className={styles.header}>
+      <div className={styles.headerDiv}>
+      <img src={Logo} alt="Logo Kenzie Burguer" />
 
-            <img src={Logo} alt="Logo Kenzie Burguer" />
+      <button onClick={() => setOpenBtn(true)} className="bbtnSm">
+      
+      <MdShoppingCart size={28} color="#BDBDBD" />
+      
+      <div className={styles.cartCountContainer}>
+      
+      <span className={styles.cartItemCount}>{cartList.length}</span>
 
-            <button>
-            
-                <MdShoppingCart size={21} />
-                <span>0</span>
-            
-            </button>
-            
-         </div>
+      </div>
+      
+      </button>
 
-      </header>
+      </div>
+      
+      </div>
+    
+    </header>
+
    );
+
 };
